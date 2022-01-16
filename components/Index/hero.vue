@@ -20,14 +20,15 @@
         span.block.mt-2 快使用「臺大瑞士刀」中的服務來解決你的問題吧！
 
       .flex.flex-col(class='sm:flex-row lg:justify-start gap-2.5')
-        a.inline-block.bg-indigo-500.ring-indigo-300.text-white.text-sm.font-semibold.text-center.rounded-lg.outline-none.transition.duration-100.px-8.py-3(
-          href='#'
+        nuxt-link.inline-block.bg-indigo-500.ring-indigo-300.text-white.text-sm.font-semibold.text-center.rounded-lg.outline-none.transition.duration-100.px-8.py-3(
+          to='/login'
           class='hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring md:text-base'
         ) 新增你的服務
         a.inline-block.bg-gray-200.ring-indigo-300.text-gray-500.text-sm.font-semibold.text-center.rounded-lg.outline-none.transition.duration-100.px-8.py-3(
-          href='#'
+          href='https://github.com/maxchou415/ntu-marketplace-frontend'
+          target="_blank"
           class='hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base'
-        ) Github ⭐️
+        ) GitHub ⭐️
 
 </template>
 

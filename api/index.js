@@ -18,7 +18,7 @@ axios.interceptors.response.use(respone => {
 }, error => {
   if (error.response.status === 401) {
     window.localStorage.removeItem('accessToken')
-    window.location.replace('/auth?error=CREDENTIAL_FAILURE')
+    window.location.replace('/login?error=CREDENTIAL_FAILURE')
     return
   }
   return Promise.reject(error)

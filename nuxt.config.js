@@ -29,6 +29,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/vue-google-oauth2'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,7 +48,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/universal-storage',
+    'nuxt-client-init-module'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -59,6 +62,7 @@ export default {
 
   env: {
     apiOrigin: process.env.API_ORIGIN || 'http://localhost:8081/api',
-    apiVersion: process.env.API_VERSION || 'v1'
+    apiVersion: process.env.API_VERSION || 'v1',
+    googleClientId: process.env.GOOGLE_CLIENT_ID || '125978922624-tg18kriahbbraod2hiv6esq2lf3d18m3.apps.googleusercontent.com'
   }
 }
