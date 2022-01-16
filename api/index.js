@@ -9,6 +9,10 @@ export default {
   auth: require('./auth')({
     api: axiosInstance(),
     resource: '/auth'
+  }),
+  services: require('./services')({
+    api: axiosInstance(),
+    resource: '/services'
   })
 }
 
