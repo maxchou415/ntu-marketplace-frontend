@@ -4,7 +4,11 @@
     .h-72.bg-gray-100.overflow-hidden.shadow-lg.rounded-lg(
       class='xl:w-5/12 lg:order-1'
     )
-      img.w-full.h-full.object-cover.object-center(src='https://images.unsplash.com/photo-1618004912476-29818d81ae2e?auto=format&q=75&fit=crop&w=1000' loading='lazy' alt='Photo by Fakurian Design')
+      img.w-full.h-full.object-cover.object-center(
+        src='~/static/images/hero.jpg'
+        loading='lazy'
+        alt='Photo by freepik'
+      )
     .flex.flex-col.justify-center.order-0(class='xl:w-5/12 lg:text-left')
       p.text-indigo-500.font-semibold.mb-4(
         class='md:text-lg xl:text-xl md:mb-6'
